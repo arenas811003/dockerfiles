@@ -1,7 +1,4 @@
-ARG ELASTIC_VERSION
-
-# https://github.com/elastic/kibana-docker
-FROM docker.elastic.co/kibana/kibana:${ELASTIC_VERSION}
+FROM docker.elastic.co/kibana/kibana:7.6.2
 
 ADD ./config/kibana.yml /usr/share/kibana/config/kibana.yml:ro,z
 
